@@ -1,0 +1,137 @@
+:root {
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  background: #f5f6f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+}
+
+.page-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.login-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1f2a44 0%, #30456b 55%, #4a628f 100%);
+}
+
+.login-card {
+  width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+}
+
+.login-title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.login-sub {
+  text-align: center;
+  color: #8a8f99;
+  margin-bottom: 24px;
+  font-size: 12px;
+}
+
+.case-layout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.case-left {
+  flex: 1 1 62%;
+  min-width: 0;
+}
+
+.case-right {
+  flex: 0 0 36%;
+  min-width: 340px;
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+.canvas-wrap {
+  position: relative;
+  width: 100%;
+  background: #10131a;
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.canvas-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.canvas-wrap svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.damage-card {
+  margin-bottom: 12px;
+  border-left: 3px solid #1677ff;
+}
+
+.damage-card.selected {
+  box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.35);
+}
+
+.muted {
+  color: #8a8f99;
+  font-size: 12px;
+}
+
+.thumb-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.thumb {
+  width: 84px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.thumb.active {
+  border-color: #1677ff;
+}
+
+.quote-total {
+  display: flex;
+  gap: 28px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.report-frame {
+  width: 100%;
+  height: calc(100vh - 220px);
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background: #fff;
+}

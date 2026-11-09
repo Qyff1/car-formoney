@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "note": "材料费（元）：油漆、辅料、玻璃胶、补胎材料等。part_code 为空表示通用回退项。更换类动作默认不计材料费。",
+  "items": [
+    {"part_code": null, "action": "paint", "severity_band": "minor", "material_cost": 120},
+    {"part_code": null, "action": "paint", "severity_band": "medium", "material_cost": 200},
+    {"part_code": null, "action": "paint", "severity_band": "severe", "material_cost": 320},
+    {"part_code": null, "action": "repair", "severity_band": "minor", "material_cost": 30},
+    {"part_code": null, "action": "repair", "severity_band": "medium", "material_cost": 60},
+    {"part_code": null, "action": "repair", "severity_band": "severe", "material_cost": 100},
+    {"part_code": null, "action": "glass_replace", "severity_band": "minor", "material_cost": 80},
+    {"part_code": null, "action": "glass_replace", "severity_band": "medium", "material_cost": 120},
+    {"part_code": null, "action": "glass_replace", "severity_band": "severe", "material_cost": 160},
+    {"part_code": null, "action": "lamp_replace", "severity_band": "minor", "material_cost": 20},
+    {"part_code": null, "action": "lamp_replace", "severity_band": "medium", "material_cost": 30},
+    {"part_code": null, "action": "lamp_replace", "severity_band": "severe", "material_cost": 40},
+    {"part_code": null, "action": "tire_repair", "severity_band": "minor", "material_cost": 20},
+    {"part_code": null, "action": "tire_repair", "severity_band": "medium", "material_cost": 30},
+    {"part_code": null, "action": "tire_repair", "severity_band": "severe", "material_cost": 40},
+    {"part_code": null, "action": "tire_replace", "severity_band": "minor", "material_cost": 30},
+    {"part_code": null, "action": "tire_replace", "severity_band": "medium", "material_cost": 40},
+    {"part_code": null, "action": "tire_replace", "severity_band": "severe", "material_cost": 50},
+    {"part_code": "windshield", "action": "repair", "severity_band": "minor", "material_cost": 150},
+    {"part_code": "windshield", "action": "repair", "severity_band": "medium", "material_cost": 220},
+    {"part_code": "front_bumper", "action": "paint", "severity_band": "medium", "material_cost": 220}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "note": "地区工时单价（元/标准工时）与地区系数。coefficient 用于按地区调节工时费，示例数据。",
+  "items": [
+    {"region_code": "000000", "region_name": "全国参考", "labor_rate": 130, "coefficient": 1.0},
+    {"region_code": "110000", "region_name": "北京", "labor_rate": 160, "coefficient": 1.15},
+    {"region_code": "310000", "region_name": "上海", "labor_rate": 165, "coefficient": 1.18},
+    {"region_code": "440100", "region_name": "广州", "labor_rate": 140, "coefficient": 1.05},
+    {"region_code": "510100", "region_name": "成都", "labor_rate": 120, "coefficient": 0.95},
+    {"region_code": "420100", "region_name": "武汉", "labor_rate": 115, "coefficient": 0.92}
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "version": 2,
+  "note": "20 款主流车型；年款与配置为公开资料整理，仅用于系统演示。",
+  "items": [
+    {
+      "code": "generic",
+      "brand": "通用",
+      "series": "通用车型",
+      "year_from": 2015,
+      "year_to": 2026,
+      "trim": "V1 兜底",
+      "is_default": true
+    },
+    {
+      "code": "vw_lavida",
+      "brand": "大众",
+      "series": "朗逸",
+      "year_from": 2019,
+      "year_to": 2023,
+      "trim": "舒适版",
+      "is_default": false
+    },
+    {
+      "code": "vw_sagitar",
+      "brand": "大众",
+      "series": "速腾",
+      "year_from": 2019,
+      "year_to": 2024,
+      "trim": "舒适版",
+      "is_default": false
+    },
+    {
+      "code": "vw_tiguanl",
+      "brand": "大众",
+      "series": "途观L",
+      "year_from": 2017,
+      "year_to": 2023,
+      "trim": "330TSI",
+      "is_default": false
+    },
+    {
+      "code": "toyota_corolla",
+      "brand": "丰田",
+      "series": "卡罗拉",
+      "year_from": 2020,
+      "year_to": 2024,
+      "trim": "精英版",
+      "is_default": false
+    },
+    {
+      "code": "toyota_camry",
+      "brand": "丰田",
+      "series": "凯美瑞",
+      "year_from": 2018,
+      "year_to": 2024,
+      "trim": "2.0G",
+      "is_default": false
+    },
+    {
+      "code": "toyota_rav4",
+      "brand": "丰田",
+      "series": "RAV4荣放",
+      "year_from": 2019,
+      "year_to": 2024,
+      "trim": "2.0L",
+      "is_default": false
+    },
+    {
+      "code": "honda_civic",
+      "brand": "本田",
+      "series": "思域",
+      "year_from": 2019,
+      "year_to": 2023,
+      "trim": "劲动版",
+      "is_default": false
+    },
+    {
+      "code": "honda_accord",
+      "brand": "本田",
+      "series": "雅阁",
+      "year_from": 2018,
+      "year_to": 2023,
+      "trim": "260TURBO",
+      "is_default": false
+    },
+    {
+      "code": "honda_crv",
+      "brand": "本田",
+      "series": "CR-V",
+      "year_from": 2017,
+      "year_to": 2023,
+      "trim": "240TURBO",
+      "is_default": false
+    },
+    {
+      "code": "nissan_sylphy",
+      "brand": "日产",
+      "series": "轩逸",
+      "year_from": 2019,
+      "year_to": 2024,
+      "trim": "舒适版",
+      "is_default": false
+    },
+    {
+      "code": "nissan_teana",
+      "brand": "日产",
+      "series": "天籁",
+      "year_from": 2019,
+      "year_to": 2023,
+      "trim": "2.0L",
+      "is_default": false
+    },
+    {
+      "code": "buick_excelle",
+      "brand": "别克",
+      "series": "英朗",
+      "year_from": 2018,
+      "year_to": 2021,
+      "trim": "15T",
+      "is_default": false
+    },
+    {
+      "code": "hyundai_elantra",
+      "brand": "现代",
+      "series": "伊兰特",
+      "year_from": 2020,
+      "year_to": 2024,
+      "trim": "1.5L",
+      "is_default": false
+    },
+    {
+      "code": "byd_qinplus",
+      "brand": "比亚迪",
+      "series": "秦PLUS",
+      "year_from": 2021,
+      "year_to": 2024,
+      "trim": "DM-i",
+      "is_default": false
+    },
+    {
+      "code": "geely_emgrand",
+      "brand": "吉利",
+      "series": "帝豪",
+      "year_from": 2018,
+      "year_to": 2023,
+      "trim": "1.5L",
+      "is_default": false
+    },
+    {
+      "code": "changan_eado",
+      "brand": "长安",
+      "series": "逸动",
+      "year_from": 2018,
+      "year_to": 2023,
+      "trim": "1.6L",
+      "is_default": false
+    },
+    {
+      "code": "chery_arrizo5",
+      "brand": "奇瑞",
+      "series": "艾瑞泽5",
+      "year_from": 2019,
+      "year_to": 2023,
+      "trim": "1.5L",
+      "is_default": false
+    },
+    {
+      "code": "haval_h6",
+      "brand": "哈弗",
+      "series": "H6",
+      "year_from": 2017,
+      "year_to": 2023,
+      "trim": "1.5T",
+      "is_default": false
+    },
+    {
+      "code": "changan_cs75plus",
+      "brand": "长安",
+      "series": "CS75 PLUS",
+      "year_from": 2019,
+      "year_to": 2024,
+      "trim": "1.5T",
+      "is_default": false
+    },
+    {
+      "code": "geely_boyue",
+      "brand": "吉利",
+      "series": "博越",
+      "year_from": 2016,
+      "year_to": 2023,
+      "trim": "1.8T",
+      "is_default": false
+    }
+  ]
+}

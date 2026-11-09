@@ -1,0 +1,25 @@
+# ===== 车辆损伤智能定损系统 依赖清单 =====
+# 安装顺序（必须先装 GPU 版 PyTorch，再装其余依赖）：
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#   pip install -r requirements.txt
+# 注意：本项目必须使用 GPU 版 PyTorch（CUDA 12.8 / cu128 轮子），
+#       不要安装 PyPI 默认的 CPU 版；torch/torchvision 由上面的命令安装，不在此文件列出。
+
+# --- 检测/分割推理 ---
+ultralytics>=8.3.197
+opencv-python>=4.8
+numpy>=1.26
+pillow>=10
+pyyaml>=6
+
+# --- 后端 API ---
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+pydantic>=2.6
+sqlalchemy>=2.0
+pyjwt>=2.8
+
+# --- 测试与配置 ---
+pytest>=8
+python-dotenv>=1.0

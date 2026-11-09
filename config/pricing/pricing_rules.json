@@ -1,0 +1,43 @@
+{
+  "version": 4,
+  "formula_version": "v1-part-material-labor",
+  "note": "规则仅提供动作初判建议，最终动作以人工确认为准。area_ratio 为损伤掩膜面积占图片面积比例。severity_thresholds 用于生成轻微/一般/严重建议；更换类动作按严重度取配件低/中/高位价，材料费与标准工时同按严重度档取值；配件价按车辆年款逐年定价。",
+  "default_parts": {
+    "dent": "front_fender",
+    "scratch": "door_front",
+    "crack": "front_bumper",
+    "glass shatter": "windshield",
+    "lamp broken": "headlamp",
+    "tire flat": "tire",
+    "note": "模型只识别损伤类型，不识别具体部件。分析完成后按此表预填受损部件作为系统初判，人工可在工作台修改后确认。"
+  },
+  "vehicle_year_pricing": {
+    "annual_factor": 0.96,
+    "floor": 0.65,
+    "note": "同一车型以年款区间最新年为基准价，车龄每增加一年配件价乘 0.96，最低保留 65%；工时与材料不随车龄变化。仅用于系统演示，不代表厂商报价或保险结算价。"
+  },
+  "rules": [
+    {"rule_code": "scratch_polish", "priority": 30, "damage_type": "scratch", "part_category": null, "area_ratio_min": 0, "area_ratio_max": 0.005, "action": "repair", "method": "抛光处理", "requires_review": false},
+    {"rule_code": "scratch_spot_paint", "priority": 20, "damage_type": "scratch", "part_category": null, "area_ratio_min": 0.005, "area_ratio_max": 0.02, "action": "paint", "method": "局部补漆", "requires_review": false},
+    {"rule_code": "scratch_full_paint", "priority": 10, "damage_type": "scratch", "part_category": null, "area_ratio_min": 0.02, "area_ratio_max": null, "action": "paint", "method": "整板喷漆", "requires_review": false},
+    {"rule_code": "dent_pdr", "priority": 30, "damage_type": "dent", "part_category": null, "area_ratio_min": 0, "area_ratio_max": 0.003, "action": "repair", "method": "无痕凹陷修复", "requires_review": false},
+    {"rule_code": "dent_panel_repair", "priority": 20, "damage_type": "dent", "part_category": null, "area_ratio_min": 0.003, "area_ratio_max": 0.015, "action": "repair", "method": "钣金修复 + 局部喷漆", "requires_review": false},
+    {"rule_code": "dent_panel_paint", "priority": 10, "damage_type": "dent", "part_category": null, "area_ratio_min": 0.015, "area_ratio_max": null, "action": "repair", "method": "钣金修复 + 整板喷漆", "requires_review": false},
+    {"rule_code": "crack_plastic_repair", "priority": 25, "damage_type": "crack", "part_category": ["plastic"], "area_ratio_min": 0, "area_ratio_max": 0.01, "action": "repair", "method": "塑料件裂纹修复", "requires_review": false},
+    {"rule_code": "crack_replace", "priority": 10, "damage_type": "crack", "part_category": null, "area_ratio_min": 0, "area_ratio_max": null, "action": "replace", "method": "裂纹部件更换", "requires_review": true},
+    {"rule_code": "glass_repair_small", "priority": 20, "damage_type": "glass shatter", "part_category": null, "area_ratio_min": 0, "area_ratio_max": 0.01, "action": "repair", "method": "玻璃修补", "requires_review": false},
+    {"rule_code": "glass_replace", "priority": 10, "damage_type": "glass shatter", "part_category": null, "area_ratio_min": 0.01, "area_ratio_max": null, "action": "glass_replace", "method": "玻璃更换", "requires_review": false},
+    {"rule_code": "lamp_repair_small", "priority": 20, "damage_type": "lamp broken", "part_category": null, "area_ratio_min": 0, "area_ratio_max": 0.005, "action": "repair", "method": "灯罩修复", "requires_review": false},
+    {"rule_code": "lamp_replace", "priority": 10, "damage_type": "lamp broken", "part_category": null, "area_ratio_min": 0.005, "area_ratio_max": null, "action": "lamp_replace", "method": "灯总成更换", "requires_review": false},
+    {"rule_code": "tire_repair", "priority": 20, "damage_type": "tire flat", "part_category": null, "area_ratio_min": 0, "area_ratio_max": 0.05, "action": "tire_repair", "method": "补胎", "requires_review": false},
+    {"rule_code": "tire_replace", "priority": 10, "damage_type": "tire flat", "part_category": null, "area_ratio_min": 0.05, "area_ratio_max": null, "action": "tire_replace", "method": "轮胎更换", "requires_review": false}
+  ],
+  "severity_thresholds": [
+    {"damage_type": "scratch", "minor_max": 0.005, "severe_min": 0.02},
+    {"damage_type": "dent", "minor_max": 0.003, "severe_min": 0.015},
+    {"damage_type": "crack", "minor_max": 0.002, "severe_min": 0.01},
+    {"damage_type": "glass shatter", "minor_max": 0.01, "severe_min": 0.05},
+    {"damage_type": "lamp broken", "minor_max": 0.005, "severe_min": 0.03},
+    {"damage_type": "tire flat", "minor_max": 0.01, "severe_min": 0.05}
+  ]
+}

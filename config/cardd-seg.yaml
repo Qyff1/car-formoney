@@ -1,0 +1,12 @@
+# CarDD 官方划分的 YOLO Seg 数据配置（由 prepare_cardd_yoloseg.py 生成）
+path: d:/car-formoney/data/processed/cardd_yolo_seg
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: dent
+  1: scratch
+  2: crack
+  3: glass shatter
+  4: lamp broken
+  5: tire flat

@@ -1,0 +1,65 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+*.log
+
+# ===== 原始数据与运行时数据 =====
+# CarDD 原始数据集体积大，不进仓库
+data/raw/
+# 案件上传图片、叠加图、报告属于运行时数据
+data/uploads/
+data/app.db
+data/app.db-journal
+data/app.db-wal
+
+# 派生训练数据（可由 scripts/prepare_cardd_yoloseg.py 重新生成）
+data/processed/cardd_yolo_seg/*
+!data/processed/cardd_yolo_seg/.gitkeep
+
+# ===== 训练产物 =====
+# runs 下仅保留两个交付权重，其余训练产物、验证结果、日志都不提交
+runs/**
+!runs/cardd/
+!runs/cardd/yolov8s_seg_baseline/
+!runs/cardd/yolov8s_seg_baseline/weights/
+!runs/cardd/yolov8s_seg_baseline/weights/best.pt
+!runs/cardd/yolov8s_seg_p2_mask320/
+!runs/cardd/yolov8s_seg_p2_mask320/weights/
+!runs/cardd/yolov8s_seg_p2_mask320/weights/best.pt
+
+# 训练输入权重、导出模型
+*.pth
+*.onnx
+*.torchscript
+yolo11n.pt
+yolov8s-seg.pt
+
+# ===== 前端 =====
+web/node_modules/
+web/dist/
+web/*.tsbuildinfo
+web/vite.config.js
+web/vite.config.d.ts
+
+# ===== 本地缓存（统一放 D 盘，不提交）=====
+.cache/
+.hf-cache/
+Ultralytics/
+
+# ===== 第三方本地源码（按 README 从 PyPI 安装 ultralytics）=====
+YOLOv8/
+
+# ===== 内部研发文档与工作守则（不对外提交）=====
+docs/
+AGENTS.md
+
+# ===== 本地环境与 IDE =====
+.env
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
