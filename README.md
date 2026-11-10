@@ -137,9 +137,7 @@ Remove-Item data\app.db
 powershell -ExecutionPolicy Bypass -File .\setup.ps1
 ```
 
-脚本会创建 `.venv`、安装 cu128 版 PyTorch 与 `requirements.txt` 全部依赖，并打印 GPU / ultralytics 版本。可重复执行，已完成的步骤自动跳过。
-
-3. 安装前端依赖：`cd web; npm install`。
+脚本会依次完成：创建 `.venv` → 安装 cu128 版 PyTorch → 安装 `requirements.txt` 全部依赖 → 安装 `web/node_modules` → 打印 GPU / ultralytics 版本。可重复执行，已完成的步骤自动跳过。装完双击 `车辆定损系统.bat` 即可使用，无需其他步骤。
 
 ---
 
